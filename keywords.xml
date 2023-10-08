@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec name="Uut" type="LIBRARY" format="ROBOT" scope="TEST" generated="2023-10-02T07:05:52+00:00" specversion="5" source="/home/angel/Documents/GeminiRf/lib/controller/Uut.py" lineno="17">
+<version/>
+<doc>Documentation for library ``Uut``.</doc>
+<tags>
+</tags>
+<inits>
+</inits>
+<keywords>
+<kw name="Add Img To Report" source="/home/angel/Documents/GeminiRf/lib/hil/uut.py" lineno="134">
+<arguments repr="graph_file_name: str">
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="graph_file_name: str">
+<name>graph_file_name</name>
+<type name="str" typedoc="string">str</type>
+</arg>
+</arguments>
+<doc>Add image with provided filename to the report.
+
+:param graph_file_name: filename of the graph.</doc>
+<shortdoc>Add image with provided filename to the report.</shortdoc>
+</kw>
+<kw name="Add Plot Info To Graph" source="/home/angel/Documents/GeminiRf/lib/hil/uut.py" lineno="130">
+<arguments repr="plot_values: Dict">
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="plot_values: Dict">
+<name>plot_values</name>
+<type name="Dict" typedoc="dictionary">Dict</type>
+</arg>
+</arguments>
+<doc/>
+<shortdoc/>
+</kw>
+<kw name="Add To Capture" source="/home/angel/Documents/GeminiRf/lib/hil/uut.py" lineno="94">
+<arguments repr="signal: str">
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="signal: str">
+<name>signal</name>
+<type name="str" typedoc="string">str</type>
+</arg>
+</arguments>
+<doc/>
+<shortdoc/>
+</kw>
+<kw name="Check Pressure Value" source="/home/angel/Documents/GeminiRf/lib/hil/uut.py" lineno="88">
+<arguments repr="sensor: str, actual: float, expected: float, deviation: float, unit: str">
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="sensor: str">
+<name>sensor</name>
+<type name="str" typedoc="string">str</type>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="actual: float">
+<name>actual</name>
+<type name="float" typedoc="float">float</type>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="expected: float">
+<name>expected</name>
+<type name="float" typedoc="float">float</type>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="deviation: float">
+<name>deviation</name>
+<type name="float" typedoc="float">float</type>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="unit: str">
+<name>unit</name>
+<type name="str" typedoc="string">str</type>
+</arg>
+</arguments>
+<doc/>
+<shortdoc/>
+</kw>
+<kw name="Check Signal Pattern" source="/home/angel/Documents/GeminiRf/lib/hil/uut.py" lineno="329">
+<arguments repr="d_measure: Dict, real_signal_name: str, reference_signal_name: str, x_axis_tolerance: float, y_axis_tolerance: float">
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="d_measure: Dict">
+<name>d_measure</name>
+<type name="Dict" typedoc="dictionary">Dict</type>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="real_signal_name: str">
+<name>real_signal_name</name>
+<type name="str" typedoc="string">str</type>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="reference_signal_name: str">
+<name>reference_signal_name</name>
+<type name="str" typedoc="string">str</type>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="x_axis_tolerance: float">
+<name>x_axis_tolerance</name>
+<type name="float" typedoc="float">float</type>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="y_axis_tolerance: float">
+<name>y_axis_tolerance</name>
+<type name="float" typedoc="float">float</type>
+</arg>
+</arguments>
+<doc>Method to check the signal patterns for all provided signals.
+
+:param d_measure: input value with the signal names and their values.
+:param real_signal_name: signal name of the signal to be measured.
+:param reference_signal_name: signal name of the signal upon which signals will be compares.
+:param x_axis_tolerance: tolerance for the X axis of the graph.
+:param y_axis_tolerance: tolerance for the Y axis of the graph.</doc>
+<shortdoc>Method to check the signal patterns for all provided signals.</shortdoc>
+</kw>
+<kw name="Compare Signals Pattern" source="/home/angel/Documents/GeminiRf/lib/hil/uut.py" lineno="144">
+<arguments repr="d_measure: Dict, real_signal_name: str, reference_signal_name: str, x_axis_tolerance: float, y_axis_tolerance: float">
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="d_measure: Dict">
+<name>d_measure</name>
+<type name="Dict" typedoc="dictionary">Dict</type>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="real_signal_name: str">
+<name>real_signal_name</name>
+<type name="str" typedoc="string">str</type>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="reference_signal_name: str">
+<name>reference_signal_name</name>
+<type name="str" typedoc="string">str</type>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="x_axis_tolerance: float">
+<name>x_axis_tolerance</name>
+<type name="float" typedoc="float">float</type>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="y_axis_tolerance: float">
+<name>y_axis_tolerance</name>
+<type name="float" typedoc="float">float</type>
+</arg>
+</arguments>
+<doc>Method to compare to signals and check whether they match with minimal deviations.
+
+:param d_measure: input value with the signal names and their values.
+:param real_signal_name: signal name of the signal to be measured.
+:param reference_signal_name: signal name of the signal upon which signals will be compares.
+:param x_axis_tolerance: tolerance for the X axis of the graph.
+:param y_axis_tolerance: tolerance for the Y axis of the graph.
+
+:return: Points of the two signals which are not matching / max difference on X and Y axis / result.</doc>
+<shortdoc>Method to compare to signals and check whether they match with minimal deviations.</shortdoc>
+</kw>
+<kw name="Config And Start Capture" source="/home/angel/Documents/GeminiRf/lib/hil/uut.py" lineno="99">
+<arguments repr="">
+</arguments>
+<doc/>
+<shortdoc/>
+</kw>
+<kw name="Create Evaluation Sub Test" source="/home/angel/Documents/GeminiRf/lib/hil/uut.py" lineno="65">
+<arguments repr="">
+</arguments>
+<doc/>
+<shortdoc/>
+</kw>
+<kw name="Get Pressure Value" source="/home/angel/Documents/GeminiRf/lib/hil/uut.py" lineno="78">
+<arguments repr="sensor: str, read_method: str, platform: str">
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="sensor: str">
+<name>sensor</name>
+<type name="str" typedoc="string">str</type>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="read_method: str">
+<name>read_method</name>
+<type name="str" typedoc="string">str</type>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="platform: str">
+<name>platform</name>
+<type name="str" typedoc="string">str</type>
+</arg>
+</arguments>
+<doc/>
+<shortdoc/>
+</kw>
+<kw name="Init Application System" source="/home/angel/Documents/GeminiRf/lib/hil/uut.py" lineno="61">
+<arguments repr="">
+</arguments>
+<doc/>
+<shortdoc/>
+</kw>
+<kw name="Power Down Uut" source="/home/angel/Documents/GeminiRf/lib/hil/uut.py" lineno="43">
+<arguments repr="system">
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="system">
+<name>system</name>
+</arg>
+</arguments>
+<doc/>
+<shortdoc/>
+</kw>
+<kw name="Power Up Uut" source="/home/angel/Documents/GeminiRf/lib/hil/uut.py" lineno="32">
+<arguments repr="system">
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="system">
+<name>system</name>
+</arg>
+</arguments>
+<doc/>
+<shortdoc/>
+</kw>
+<kw name="Set Pressure Value" source="/home/angel/Documents/GeminiRf/lib/hil/uut.py" lineno="69">
+<arguments repr="sensor: str, value: float, unit: str, sim_type: str">
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="sensor: str">
+<name>sensor</name>
+<type name="str" typedoc="string">str</type>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="value: float">
+<name>value</name>
+<type name="float" typedoc="float">float</type>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="unit: str">
+<name>unit</name>
+<type name="str" typedoc="string">str</type>
+</arg>
+<arg kind="POSITIONAL_OR_NAMED" required="true" repr="sim_type: str">
+<name>sim_type</name>
+<type name="str" typedoc="string">str</type>
+</arg>
+</arguments>
+<doc/>
+<shortdoc/>
+</kw>
+<kw name="Start Measuring" source="/home/angel/Documents/GeminiRf/lib/hil/uut.py" lineno="28">
+<arguments repr="">
+</arguments>
+<doc/>
+<shortdoc/>
+</kw>
+<kw name="Stop Capture And Save Measurement" source="/home/angel/Documents/GeminiRf/lib/hil/uut.py" lineno="104">
+<arguments repr="">
+</arguments>
+<doc/>
+<shortdoc/>
+</kw>
+</keywords>
+<datatypes>
+</datatypes>
+<typedocs>
+<type name="dictionary" type="Standard">
+<doc>Strings must be Python [https://docs.python.org/library/stdtypes.html#dict|dictionary]
+literals. They are converted to actual dictionaries using the
+[https://docs.python.org/library/ast.html#ast.literal_eval|ast.literal_eval]
+function. They can contain any values ``ast.literal_eval`` supports, including
+dictionaries and other containers.
+
+If the type has nested types like ``dict[str, int]``, items are converted
+to those types automatically. This in new in Robot Framework 6.0.
+
+Examples: ``{'a': 1, 'b': 2}``, ``{'key': 1, 'nested': {'key': 2}}``
+</doc>
+<accepts>
+<type>string</type>
+<type>Mapping</type>
+</accepts>
+<usages>
+<usage>Add Plot Info To Graph</usage>
+<usage>Check Signal Pattern</usage>
+<usage>Compare Signals Pattern</usage>
+</usages>
+</type>
+<type name="float" type="Standard">
+<doc>Conversion is done using Python's
+[https://docs.python.org/library/functions.html#float|float] built-in function.
+
+Starting from RF 4.1, spaces and underscores can be used as visual separators
+for digit grouping purposes.
+
+Examples: ``3.14``, ``2.9979e8``, ``10 000.000 01``
+</doc>
+<accepts>
+<type>string</type>
+<type>Real</type>
+</accepts>
+<usages>
+<usage>Check Pressure Value</usage>
+<usage>Check Signal Pattern</usage>
+<usage>Compare Signals Pattern</usage>
+<usage>Set Pressure Value</usage>
+</usages>
+</type>
+<type name="string" type="Standard">
+<doc>All arguments are converted to Unicode strings.</doc>
+<accepts>
+<type>Any</type>
+</accepts>
+<usages>
+<usage>Add Img To Report</usage>
+<usage>Add To Capture</usage>
+<usage>Check Pressure Value</usage>
+<usage>Check Signal Pattern</usage>
+<usage>Compare Signals Pattern</usage>
+<usage>Get Pressure Value</usage>
+<usage>Set Pressure Value</usage>
+</usages>
+</type>
+</typedocs>
+</keywordspec>

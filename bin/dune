@@ -1,0 +1,4 @@
+(executable
+ (public_name kwds_parse)
+ (name main)
+ (libraries kwds_parse xml-light))
