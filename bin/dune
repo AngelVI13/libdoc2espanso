@@ -1,4 +1,6 @@
 (executable
  (public_name kwds_parse)
  (name main)
- (libraries kwds_parse xml-light))
+ (libraries kwds_parse xml-light)
+ (preprocess
+  (pps ppx_deriving.show ppx_deriving.ord)))
